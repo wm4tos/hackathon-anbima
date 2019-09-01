@@ -32,15 +32,10 @@
 </template>
 
 <script>
-import IButton from 'components/interrogation-button.vue';
-
 export default {
   data: () => ({
     objective: '',
   }),
-  components: {
-    IButton,
-  },
   methods: {
     nextRoute() {
       this.$store.dispatch('SET_OBJECTIVE', this.objective);
