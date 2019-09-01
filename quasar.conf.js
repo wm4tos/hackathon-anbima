@@ -104,13 +104,13 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'I9ação',
-        // short_name: 'I9ação',
+        name: 'I9ação',
+        short_name: 'I9ação',
         // description: '',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
-        theme_color: '#027be3',
+        theme_color: '#662BFF',
         icons: [
           {
             src: 'statics/icons/icon-128x128.png',
