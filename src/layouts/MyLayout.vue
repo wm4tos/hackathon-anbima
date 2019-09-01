@@ -44,14 +44,9 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
   name: 'default-layout',
   computed: {
-    ...mapGetters({
-      route: 'getLastRoute',
-    }),
     isHome() {
       return this.$route.name === 'home';
     },
