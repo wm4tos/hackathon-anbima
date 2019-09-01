@@ -1,7 +1,7 @@
 <template>
   <q-page class="row column justify-between">
     <div>
-      <div class="flex justify-between">
+      <div class="flex justify-between items-center">
         <h1> Qual seu objetivo? </h1>
         <i-button />
       </div>
