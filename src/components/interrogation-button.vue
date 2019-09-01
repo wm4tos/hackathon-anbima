@@ -1,19 +1,10 @@
 <template>
-  <q-btn
-    :class="`bg-${colorButton} text-${colorText}`"
-    label="?"
-    round
-    size="lg"
-    @click="changeTooltipValue"
-    @blur="changeTooltipValue"
-  >
-    <q-tooltip
-      v-model="tooltip"
-      anchor="bottom right"
-    >
+  <div :class="`i-button bg-${colorButton} text-${colorText}`">
+    <div class="label"> ? </div>
+    <q-tooltip v-model="tooltip" anchor="bottom right">
       {{ labelTooltip }}
     </q-tooltip>
-  </q-btn>
+  </div>
 </template>
 
 <script>
@@ -42,3 +33,21 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.i-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px 0 24px;
+  background: #343434;
+  border-radius: 50%;
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+</style>
