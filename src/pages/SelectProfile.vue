@@ -1,40 +1,35 @@
 <template>
   <q-page>
-    <div class="flex justify-between items-center">
-      <h1> Perfil </h1>
-      <i-button />
-    </div>
-    <p class="q-mt-md">
+    <TitleHelp> Perfil </TitleHelp>
+    <p>
       Precisamos conhecer você um pouco melhor para poder recomendar os melhores fundos para você atingir seu objetivo mais rápido.
     </p>
+
     <div>
-      <q-btn
-        class="text-white q-mr-md q-mt-lg"
-        :class="buttonSelected === v ? 'bg-primary' : 'bg-black'"
-        v-for="v in 2"
-        :key="v"
-        :label="v"
-        round
-        size="md"
-        @click="buttonSelected = v"
-      />
-    </div>
-    <div
-      v-for="v in 6"
-      :key="v">
+      <div class="q-mb-lg row">
+        <CircleLabel active class="-big">1</CircleLabel>
+        <CircleLabel disabled class="-big">2</CircleLabel>
+      </div>
+
       <q-checkbox
-        v-show="buttonSelected === 1 && v <= 3"
-        class="q-mt-md"
+        class="q-mb-lg"
         v-model="selected"
-        :val="v"
-        label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa gravida amet, egestas massa est pellentesque turpi."
+        :val="1"
+        label="Sou conservador, prefiro correr poucos riscos mesmo que isso signifique perder algumas oportunidades"
       />
+
       <q-checkbox
-        v-show="buttonSelected === 2 && v > 3"
-        class="q-mt-md"
+        class="q-mb-lg"
         v-model="selected"
-        :val="v"
-        label="Chase after silly colored fish toys around the house man running from cops stops to pet cats, goes to jail yet find something else more interesting poop in litter box."
+        :val="2"
+        label="Sou moderado, poderia investir em uma oportunidade que possa me dar um maior retorno mesmo que com algum risco"
+      />
+
+      <q-checkbox
+        class="q-mb-lg"
+        v-model="selected"
+        :val="3"
+        label=" Sou arrojado, gosto da liberdade para investir em vários ativos, mesmo que signifique correr um maior risco"
       />
     </div>
     <div class="q-mt-lg">
