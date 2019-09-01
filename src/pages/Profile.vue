@@ -93,7 +93,7 @@ export default {
         goal: 750.00,
       },
       {
-        title: 'Fundo de ações BIEX',
+        title: 'Fundo de renda fixa BIEX',
         risk: 2,
         time: '4 anos',
         goal: 500.00,
