@@ -6,7 +6,7 @@
       :reveal-offset="100"
     >
       <q-toolbar
-        class="q-px-lg q-pt-xl justify-between items-center flex q-pb-xl"
+        class="q-px-lg q-pt-xl justify-between items-center flex"
         :class="bgPrimary ? 'bg-primary' : 'bg-white'"
       >
         <q-btn

@@ -11,20 +11,18 @@
       />
     </div>
     <div class="q-mt-lg">
-      <div class="flex items-center justify-between">
-        <h2> Risco </h2>
-        <i-button />
-      </div>
+      <h1 class="q-mt-xl"> Formas de Pagamento </h1>
+      <payment-methods/>
+    </div>
+    <div class="q-mt-lg">
+      <TitleHelp>Risco</TitleHelp>
       <h3
-        class="q-mt-md text-weight-bold"
+        class="text-weight-bold"
         :class="`text-${(fund.risk || {}).color}`"
       > {{ (fund.risk || {}).label.toUpperCase() }} </h3>
     </div>
     <div class="q-mt-lg">
-      <div class="row items-center justify-between">
-        <h2 class="col-8"> Duração do investimento </h2>
-        <i-button />
-      </div>
+      <TitleHelp>Duração do investimento</TitleHelp>
       <div class="flex text-primary">
         <h3>
           <q-icon
@@ -36,13 +34,19 @@
       </div>
     </div>
     <div class="q-mt-lg">
-      <div class="row items-center justify-between">
-        <h2 class="col-8"> Meta mensal de investimento </h2>
-        <i-button />
-      </div>
-      <h3 class="q-mt-md text-weight-bold text-primary">
+      <TitleHelp>Meta mensal de investimento</TitleHelp>
+      <h3 class="text-weight-bold text-primary">
         {{ fund.goal | currency }}
       </h3>
+    </div>
+    <div class="q-mt-lg">
+      <q-btn
+        @click="$router.push({ name: 'checkout' })"
+        class="bg-primary text-white full-width"
+        label="Investir"
+        flat
+        size="lg"
+      />
     </div>
   </q-page>
 </template>
