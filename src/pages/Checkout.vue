@@ -56,7 +56,7 @@
           placeholder="DD/MM"
           mask="XX/XX"
           :rules="[
-            val => /([123][0-9])\/(19|[2-9][0-9])/.test(val) || 'Digite uma data de vencimento válida.'
+            validateDueDate
           ]"
         />
         <q-input
@@ -65,7 +65,7 @@
           class="text-grey col-4"
           placeholder="CVV"
           :rules="[
-            val => /\d{3}/.test(val) || 'Digite um CVV válido.'
+            validateCVV
           ]"
           mask="###"
         />
@@ -80,7 +80,6 @@
           label="Investir <3"
           size="lg"
           type="submit"
-          :disable="!dueDate || !cardNumber || !cvv"
         />
       </div>
     </q-form>
@@ -99,6 +98,12 @@ export default {
   methods: {
     validateMail(val) {
       return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(val) || 'Por favor, digite um e-mail válido.';
+    },
+    validateCVV(val) {
+      return /\d{3}/.test(val) || 'Digite um CVV válido.';
+    },
+    validateDueDate(val) {
+      return /([0-3][0-9])\/(19|[2-9][0-9])/.test(val) || 'Digite uma data de vencimento válida.';
     },
   },
 };

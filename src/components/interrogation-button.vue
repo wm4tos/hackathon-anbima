@@ -1,7 +1,7 @@
 <template>
   <div :class="`i-button bg-${colorButton} text-${colorText}`">
     <div class="label"> ? </div>
-    <q-tooltip v-model="tooltip" anchor="bottom right">
+    <q-tooltip anchor="bottom right">
       {{ labelTooltip }}
     </q-tooltip>
   </div>
@@ -24,11 +24,6 @@ export default {
     colorText: {
       type: String,
       default: 'white',
-    },
-  },
-  methods: {
-    changeTooltipValue() {
-      this.tooltip = !this.tooltip;
     },
   },
 };
