@@ -1,0 +1,58 @@
+<template>
+  <div class="payment-methods">
+    <div class="method">
+      <img src="~/assets/credit-card.svg" alt="" fill="white">
+      <div> CARTÃO DE <br> CRÉDITO </div>
+    </div>
+    <div class="method">
+      <img src="~/assets/wallet.svg" alt="">
+      <div> WALLET <br> DIGITAL </div>
+    </div>
+    <div class="method">
+      <img src="~/assets/boleto.svg" alt="">
+      <div> BOLETO <br> BANCÁRIO </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'payment-methods',
+};
+</script>
+
+<style lang="scss">
+.payment-methods {
+  display: flex;
+  max-width: 100%;;
+  margin-bottom: 40px;
+  overflow-x: scroll;
+
+  &.-white {
+    >.method {
+      > img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  &.-black {
+    >.method {
+      color: black;
+    }
+  }
+
+  > .method {
+    flex-shrink: 0;
+    width: 116px;
+    padding: 16px 0 16px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+</style>

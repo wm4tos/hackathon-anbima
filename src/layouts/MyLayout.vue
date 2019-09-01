@@ -5,18 +5,20 @@
         class="q-px-lg q-pt-xl justify-between"
         :class="bgPrimary ? 'bg-primary' : 'bg-white'"
       >
-        <div class="q-px-md">
+        <div class="">
           <img
             v-if="!bgPrimary"
             src="~assets/i9acao.svg"
             alt="i9ação"
             height="90px"
+            class="logo"
           />
           <img
             v-else
             src="~assets/i9acao-white.svg"
             alt="i9ação"
             height="90px"
+            class="logo"
           >
         </div>
       </q-toolbar>

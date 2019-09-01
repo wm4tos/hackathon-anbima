@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,600,700,900&display=swap');
 
 body
   font-family 'Red Hat Display', 'sans-serif'
@@ -6,26 +6,40 @@ body
 h1, h2, h3, h4, h5, h6, p
   margin-bottom 0
   margin-top 0
+  letter-spacing: 0.05em;
+  padding-right: 20px;
+  padding-left: 20px;
 
-h1
-  font-size 28px
-  line-height 2.5rem
+h1,
+h2
   font-weight 900
 
+h1
+  margin-bottom: 16px
+  font-size 28px
+  line-height: 37px
+
 h2
+  margin-bottom: 16px
   font-size 24px
+  line-height: 32px
+
 
 h3
   font-size 20px
 
 p
+  margin-bottom: 40px
   font-size 16px
+  font-weight: 500
+  line-height: 21px
 
 img
   max-width 100%
 
 .q-page
-  padding 24px
+  padding: 0
+  padding-bottom: 40px;
 
 a
   text-decoration none
@@ -44,3 +58,17 @@ a
       color $primary
       font-weight 900
       font-size 16px
+
+.q-btn 
+  font-weight: bold;
+
+.q-pt-xl
+  padding-top 40px
+
+.logo
+  margin-bottom: 40px;
+
+.text
+  &.-bold
+    font-size 24px
+    font-weight: 700
