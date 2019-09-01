@@ -26,7 +26,7 @@
       <router-view></router-view>
     </q-page-container>
 
-    <q-footer
+    <!-- <q-footer
       v-show="!isHome"
       class="q-pa-md text-right"
       :class="bgPrimary ? 'bg-primary' : 'bg-white'"
@@ -37,7 +37,7 @@
         label="?"
         size="lg"
       />
-    </q-footer>
+    </q-footer> -->
   </q-layout>
 </template>
 
