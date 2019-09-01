@@ -1,11 +1,16 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header v-show="!isHome" class="bg-primary">
+    <q-header
+      class="bg-primary"
+      v-show="!isHome"
+      reveal
+      reveal-offset="100"
+    >
       <q-toolbar
         class="q-px-lg q-pt-xl justify-between"
         :class="bgPrimary ? 'bg-primary' : 'bg-white'"
       >
-        <div class="">
+        <div>
           <img
             v-if="!bgPrimary"
             src="~assets/i9acao.svg"
