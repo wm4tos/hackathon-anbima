@@ -3,15 +3,16 @@
     <title-help>
       Checkout de investimento
     </title-help>
-    <p class="q-mt-md">
+    <p>
       Para finalizar o investimento vamos precisar de algumas informações pessoais, ta bom? :)
     </p>
     <h1 class="q-mt-sm"> Já possui conta? </h1>
     <q-btn
       class="full-width"
       label="Login"
-      color="primary"
+      color=""
       outline
+      disable
       size="lg"
     />
     <h1 class="q-mt-xl"> Qual seu CPF? </h1>
@@ -33,7 +34,7 @@
       ]"
     />
     <h1 class="q-mt-xl"> Forma de Pagamento </h1>
-    <payment-methods />
+    <payment-methods active/>
     <q-form
       @submit="$router.push({ name: 'congratulations' })">
       <h1 class="q-mt-xl"> Dados de pagamento </h1>

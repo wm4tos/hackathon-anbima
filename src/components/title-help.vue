@@ -27,6 +27,13 @@ export default {
   >.i-button {
     flex-shrink: 0;
   }
+
+  &[white] {
+    >.i-button {
+      color: black !important;
+      background: white !important;
+    }
+  }
 }
 
 </style>

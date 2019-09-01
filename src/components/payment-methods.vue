@@ -28,6 +28,20 @@ export default {
   margin-bottom: 40px;
   overflow-x: scroll;
 
+  &[active] {
+    >.method {
+      &:first-child {
+        background: #662BFF;
+        border-radius: 8px;
+        color: white;
+
+        > img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
   &.-white {
     >.method {
       > img {
