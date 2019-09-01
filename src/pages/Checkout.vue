@@ -6,15 +6,6 @@
     <p>
       Para finalizar o investimento vamos precisar de algumas informações pessoais, ta bom? :)
     </p>
-    <h1 class="q-mt-sm"> Já possui conta? </h1>
-    <q-btn
-      class="full-width"
-      label="Login"
-      color=""
-      outline
-      disable
-      size="lg"
-    />
     <h1 class="q-mt-xl"> Qual seu CPF? </h1>
     <q-input
       filled

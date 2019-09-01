@@ -53,7 +53,6 @@
                 />
               </h3>
               <h3> {{ card.time }} </h3>
-              <div class="bg-white text-primary q-px-xs rounded-borders q-ml-xs"> + rápido que a poupança </div>
             </div>
           </q-card-section>
           </router-link>
