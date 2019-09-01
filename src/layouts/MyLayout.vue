@@ -4,7 +4,7 @@
       class="bg-primary"
       v-show="!isHome"
       reveal
-      reveal-offset="100"
+      :reveal-offset="100"
     >
       <q-toolbar
         class="q-px-lg q-pt-xl justify-between"
