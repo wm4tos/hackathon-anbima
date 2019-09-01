@@ -22,7 +22,7 @@
       @click="selected = 'bill'"
     >
       <img src="~/assets/boleto.svg" alt="">
-      <div> BOLETO <br> BANCÁRIO </div>
+      <div> TED </div>
     </div>
   </div>
 </template>
