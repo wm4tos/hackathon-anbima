@@ -48,7 +48,10 @@ module.exports = function (ctx) {
         'QTooltip',
         'QSelect',
         'QInput',
-        'QCheckbox'
+        'QCheckbox',
+        'QIcon',
+        'QCard',
+        'QCardSection'
       ],
 
       directives: [
