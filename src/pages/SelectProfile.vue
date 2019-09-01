@@ -8,17 +8,17 @@
     <div>
       <div class="q-mb-lg row">
         <CircleLabel
-          @click.native="selected = 1"
-          :active="selected === 1"
-          :disabled="selected !== 1"
+          @click.native="buttonSelected = 1"
+          :active="buttonSelected === 1"
+          :disabled="buttonSelected !== 1"
           class="-big"
         >
           1
         </CircleLabel>
         <CircleLabel
-          @click.native="selected = 2"
-          :active="selected === 2"
-          :disabled="selected !== 2"
+          @click.native="buttonSelected = 2"
+          :active="buttonSelected === 2"
+          :disabled="buttonSelected !== 2"
           class="-big"
         >
           2
