@@ -35,6 +35,7 @@
         label="Próximo"
         size="lg"
         @click="$router.push({ name: 'profile' })"
+        :disable="!selected.length"
       />
     </div>
   </q-page>
