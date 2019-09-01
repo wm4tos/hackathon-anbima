@@ -19,14 +19,22 @@
         @click="buttonSelected = v"
       />
     </div>
-    <div>
+    <div
+      v-for="v in 6"
+      :key="v">
       <q-checkbox
+        v-show="buttonSelected === 1 && v <= 3"
         class="q-mt-md"
         v-model="selected"
-        v-for="v in 3"
-        :key="v"
         :val="v"
-        :label="buttonSelected === 1 ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa gravida amet, egestas massa est pellentesque turpi.' : 'Chase after silly colored fish toys around the house man running from cops stops to pet cats, goes to jail yet find something else more interesting poop in litter box.'"
+        label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa gravida amet, egestas massa est pellentesque turpi."
+      />
+      <q-checkbox
+        v-show="buttonSelected === 2 && v > 3"
+        class="q-mt-md"
+        v-model="selected"
+        :val="v"
+        label="Chase after silly colored fish toys around the house man running from cops stops to pet cats, goes to jail yet find something else more interesting poop in litter box."
       />
     </div>
     <div class="q-mt-lg">
