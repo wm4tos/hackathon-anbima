@@ -9,12 +9,14 @@
     </p>
     <div>
       <q-btn
-        class="bg-primary text-white q-mr-md q-mt-lg"
+        class="text-white q-mr-md q-mt-lg"
+        :class="buttonSelected === v ? 'bg-primary' : 'bg-black'"
         v-for="v in 2"
         :key="v"
         :label="v"
         round
         size="md"
+        @click="buttonSelected = v"
       />
     </div>
     <div>
@@ -24,7 +26,7 @@
         v-for="v in 3"
         :key="v"
         :val="v"
-        label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa gravida amet, egestas massa est pellentesque turpi."
+        :label="buttonSelected === 1 ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa gravida amet, egestas massa est pellentesque turpi.' : 'Chase after silly colored fish toys around the house man running from cops stops to pet cats, goes to jail yet find something else more interesting poop in litter box.'"
       />
     </div>
     <div class="q-mt-lg">
@@ -42,6 +44,7 @@
 export default {
   data: () => ({
     selected: [],
+    buttonSelected: 1,
   }),
 };
 </script>
