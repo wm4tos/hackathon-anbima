@@ -15,21 +15,21 @@
         class="q-mb-lg"
         v-model="selected"
         :val="1"
-        label="Sou conservador, prefiro correr poucos riscos mesmo que isso signifique perder algumas oportunidades"
+        label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis beatae mollitia eveniet tempora minus asperiores error labore, illum voluptatum, dignissimos molestias a fugit distinctio nisi repellat impedit exercitationem quas."
       />
 
       <q-checkbox
         class="q-mb-lg"
         v-model="selected"
         :val="2"
-        label="Sou moderado, poderia investir em uma oportunidade que possa me dar um maior retorno mesmo que com algum risco"
+        label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis beatae mollitia eveniet tempora minus asperiores error labore, illum voluptatum, dignissimos molestias a fugit distinctio nisi repellat impedit exercitationem quas."
       />
 
       <q-checkbox
         class="q-mb-lg"
         v-model="selected"
         :val="3"
-        label=" Sou arrojado, gosto da liberdade para investir em vários ativos, mesmo que signifique correr um maior risco"
+        label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis beatae mollitia eveniet tempora minus asperiores error labore, illum voluptatum, dignissimos molestias a fugit distinctio nisi repellat impedit exercitationem quas."
       />
     </div>
     <div class="q-mt-lg">
