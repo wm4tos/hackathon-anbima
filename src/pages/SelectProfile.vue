@@ -7,8 +7,22 @@
 
     <div>
       <div class="q-mb-lg row">
-        <CircleLabel active class="-big">1</CircleLabel>
-        <CircleLabel disabled class="-big">2</CircleLabel>
+        <CircleLabel
+          @click.native="selected = 1"
+          :active="selected === 1"
+          :disabled="selected !== 1"
+          class="-big"
+        >
+          1
+        </CircleLabel>
+        <CircleLabel
+          @click.native="selected = 2"
+          :active="selected === 2"
+          :disabled="selected !== 2"
+          class="-big"
+        >
+          2
+        </CircleLabel>
       </div>
 
       <q-checkbox
