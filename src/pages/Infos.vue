@@ -30,7 +30,7 @@
       />
       <h1 class="col-9"> Quanto quer pagar por mês? </h1>
       <q-input
-        v-model="objectiveValue"
+        v-model="monthValue"
         class="q-mt-lg full-width"
         filled
         v-money="money"
@@ -42,6 +42,7 @@
       flat
       size="lg"
       @click="$router.push({ name: 'select-profile' })"
+      :disable="monthValue === 'R$ 0,00' || objectiveValue === 'R$ 0,00'"
     />
   </q-page>
 </template>
@@ -53,6 +54,7 @@ import VMoney from 'src/mixins/v-money';
 export default {
   data: () => ({
     objectiveValue: 0,
+    monthValue: 0,
   }),
   mixins: [VMoney],
   computed: {
