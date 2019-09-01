@@ -2,10 +2,13 @@
   <q-page>
     <q-form
       @submit="$router.push({ name: 'select-profile' })">
-      <div class="row justify-between">
-        <h1 class="col-9"> Comprar {{ objective.value }} </h1>
-        <i-button />
-      </div>
+
+      <TitleHelp>
+        Comprar {{ objective.value }}?
+      </TitleHelp>
+
+      <p>Nós queremos saber um pouquinho sobre o {{ objective.value }} que você tem como objetivo.</p>
+
       <div class="row justify-between items-center q-mt-lg">
         <q-btn
           class="bg-black text-white"
@@ -14,13 +17,16 @@
           round
           size="lg"
         />
-        <h1 class="col-9"> Qual o valor do {{ objective.value }}? </h1>
+        <h1 class="col-9"> </h1>
         <q-input
           v-model="objectiveValue"
           class="q-mt-lg full-width"
           filled
           v-money="money"
         />
+        <TitleHelp>
+          Qual o valor do {{ objective.value }}?
+        </TitleHelp>
       </div>
       <div class="row justify-between q-mt-lg">
         <q-btn

@@ -1,12 +1,12 @@
 <template>
   <q-page class="row column justify-between">
     <div>
-      <div class="row justify-between items-center">
-        <h1 class="col-9"> Qual seu objetivo? </h1>
-        <i-button />
-      </div>
+      <TitleHelp>
+        Qual seu objetivo?
+      </TitleHelp>
       <p>
-        Precisamos conhecer você um pouco melhor para poder recomendar os melhores fundos para você atingir seu objetivo mais rápido.
+        Nós queremos saber qual o seu objetivo ao investir :)
+        Assim nós conseguimos indicar os melhores fundos sem dor de cabeça :D
       </p>
       <div class="q-mt-xl">
         <q-select
