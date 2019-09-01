@@ -17,8 +17,8 @@
       </div>
       <h3
         class="q-mt-md text-weight-bold"
-        :class="`text-${fund.risk.color}`"
-      > {{ fund.risk.label.toUpperCase() }} </h3>
+        :class="`text-${(fund.risk || {}).color}`"
+      > {{ (fund.risk || {}).label.toUpperCase() }} </h3>
     </div>
     <div class="q-mt-lg">
       <div class="row items-center justify-between">
